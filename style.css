@@ -1,0 +1,353 @@
+@font-face {
+    font-family: "Arimo";
+    src: url(Arimo/Arimo-VariableFont_wght.ttf);
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "Arimo";
+    src: url(Arimo/Arimo-VariableFont_wght.ttf);
+    font-weight: 600
+}
+
+body {
+    font-size: 20px;
+    font-family: "Arimo";
+    
+    
+    background-color: #F3F4F6;  
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.main {
+
+    width: 60%;             /* Занимает 90% ширины экрана */
+    max-width: 800px;      /* Не растягивается шире 1200px на больших мониторах */
+
+    background-color: #F3F4F6;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  
+}
+
+/* .main_status {
+    background-color: #F3F4F6;
+    min-height: 100vh;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+} */
+
+.menu-header {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 950px;
+    width: 100%;
+
+    font-size: 16px;
+}
+
+.menu-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 35px 25px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.menu-card:hover {
+  background-color: #e9ecfc;
+}
+
+.exit {
+    font-size: 15px;
+    font-family: "Arimo";
+    background-color: #e93b3e;
+    color: #FFFFFF;
+    
+    border: none;
+    border-radius: 20px;
+    gap: 8px;
+    padding: 10px 24px;
+
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+
+.exit:hover {
+  background-color: #741a1a;
+}
+
+/* Эффект при нажатии */
+.exit:active {
+  transform: scale(0.98);
+}
+
+
+.back {
+    font-size: 15px;
+    font-family: "Arimo";
+    background-color: #3d7bed;
+    color: #FFFFFF;
+    
+    border: none;
+    border-radius: 20px;
+    gap: 8px;
+    padding: 10px 24px;
+
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.back:hover {
+  background-color: #234481;
+}
+
+/* Эффект при нажатии */
+.back:active {
+  transform: scale(0.98);
+}
+
+
+.open {
+    font-size: 15px;
+    font-family: "Arimo";
+    background-color:  #FFFFFF;
+    color: rgb(80, 80, 253);
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    gap: 8px;
+    padding: 10px 10px;
+    
+
+}
+
+
+.open:hover {
+  background-color:  #b7d2fa;
+} 
+
+/* Эффект при нажатии*/
+.open:active {
+  transform: scale(0.98);
+} 
+
+
+/* Начало блока journal*/
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+
+
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    color: black;
+    line-height: 1.5;
+
+    width: 100%;
+    
+    text-align: center; 
+    margin-bottom: 30px;
+
+
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form {
+    font-size: 15px;
+    color: black;
+    line-height: 1.5;
+    
+    width: 100%;
+
+    background-color: white;
+    border-style: none;
+    border-radius: 30px;
+
+    margin: 0;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 50px;
+    
+
+
+    max-width: 50%;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="password"],
+input, select {
+
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    padding: 0 12px;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 40px;
+
+
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    
+    background-color: rgb(227, 237, 247);
+
+}
+
+/* input:focus, 
+select:focus {
+    background-color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+*/
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+
+
+.btn-save {
+
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 30px;
+    line-height: 1.5;
+
+    background-color: rgb(80, 80, 253);
+    border-style: none;
+    border-radius: 30px;
+
+    padding: 10px 10px;
+
+    margin: 0;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 5px;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    margin-top: 10px;
+    
+
+}
+
+.btn-save:hover {
+  background-color:  #b7d2fa;
+} 
+
+/* Эффект при нажатии*/
+.btn-save:active {
+  transform: scale(0.98);
+} 
+
+.site-btn {
+    display: flex;
+    gap: 15px;                  /* Отступ между кнопками */
+    width: 100%;                /* Ширина на весь родительский блок */
+    max-width: 800px;           /* Ограничение максимальной ширины */
+    margin: 20px auto;
+}
+
+.section-btn {
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-family: "Arimo";
+    /* font-weight: bold; */
+    color: white;
+    background-color: rgb(80, 80, 253);
+    border: none;
+    border-radius: 20px;
+
+}
+
+.section-btn:hover {
+  background-color:  #b7d2fa;
+} 
+
+/* Эффект при нажатии*/
+.section-btn:active {
+  transform: scale(0.98);
+}
+
+
+tr {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
